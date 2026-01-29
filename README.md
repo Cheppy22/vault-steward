@@ -22,7 +22,7 @@ AI-powered assistant that creates intelligent connections between your Obsidian 
 
 ### Manual Installation
 
-1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/your-repo/vault-steward/releases)
+1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/Cheppy22/vault-steward/releases)
 2. Create a folder named `vault-steward` in your vault's `.obsidian/plugins/` directory
 3. Copy the downloaded files into the folder
 4. Restart Obsidian
@@ -146,4 +146,4 @@ Created by Cheppy
 
 ## Support
 
-Report issues at [GitHub Issues](https://github.com/your-repo/vault-steward/issues)
+Report issues at [GitHub Issues](https://github.com/Cheppy22/vault-steward/issues)
