@@ -1,0 +1,10 @@
+{
+	"id": "vault-steward",
+	"name": "Vault Steward",
+	"version": "0.1.0",
+	"minAppVersion": "1.0.0",
+	"description": "AI-powered assistant that creates intelligent connections between notes via links, tags, and organization.",
+	"author": "Cheppy",
+	"authorUrl": "https://github.com/Cheppy",
+	"isDesktopOnly": false
+}

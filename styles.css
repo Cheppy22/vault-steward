@@ -1,0 +1,550 @@
+/* Vault Steward Styles */
+
+/* ============================================
+   Modal Base Styles
+   ============================================ */
+.vault-steward-modal {
+	max-width: 600px;
+}
+
+.vault-steward-modal .modal-content {
+	padding: 0;
+}
+
+/* ============================================
+   Changelog Modal
+   ============================================ */
+.vs-changelog {
+	padding: 20px;
+}
+
+.vs-changelog-header {
+	margin-bottom: 16px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.vs-changelog-header h2 {
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--text-normal);
+}
+
+.vs-changelog-list {
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.vs-header-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.vs-view-toggle {
+	display: flex;
+	gap: 4px;
+}
+
+/* Tab-style view toggle */
+.vs-tabs {
+	background: var(--background-secondary);
+	border-radius: var(--radius-m);
+	padding: 2px;
+	gap: 2px;
+}
+
+.vs-tab {
+	padding: 6px 16px;
+	border-radius: var(--radius-s);
+	font-size: 0.85em;
+	font-weight: 500;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	color: var(--text-muted);
+	transition: all 0.15s ease;
+}
+
+.vs-tab:hover {
+	color: var(--text-normal);
+	background: var(--background-modifier-hover);
+}
+
+.vs-tab-active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.vs-tab-active:hover {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.vs-btn-small {
+	padding: 2px 8px;
+	font-size: 0.8em;
+}
+
+.vs-btn-active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.vs-changelog-stats {
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+/* Session Group */
+.vs-session-group {
+	margin-bottom: 12px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	overflow: hidden;
+	transition: border-color 0.15s ease;
+}
+
+.vs-session-group.vs-session-expanded {
+	border-color: var(--interactive-accent);
+}
+
+.vs-session-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	background: var(--background-secondary);
+	cursor: pointer;
+	gap: 10px;
+}
+
+.vs-session-header:hover {
+	background: var(--background-secondary-alt);
+}
+
+.vs-session-chevron {
+	font-size: 0.8em;
+	color: var(--text-muted);
+	flex-shrink: 0;
+	transition: transform 0.15s ease;
+}
+
+.vs-session-expanded .vs-session-chevron {
+	color: var(--interactive-accent);
+}
+
+.vs-session-info {
+	flex: 1;
+}
+
+.vs-session-date {
+	font-weight: 500;
+	color: var(--text-normal);
+}
+
+.vs-session-summary {
+	font-size: 0.85em;
+	margin-top: 2px;
+}
+
+.vs-session-actions {
+	display: flex;
+	gap: 6px;
+}
+
+.vs-session-changes {
+	padding: 8px;
+	background: var(--background-primary);
+}
+
+/* Empty state */
+.vs-empty-state {
+	text-align: center;
+	padding: 40px 20px;
+}
+
+.vs-empty-state p {
+	margin: 8px 0;
+}
+
+.vs-muted {
+	color: var(--text-muted);
+	font-size: 0.9em;
+}
+
+/* ============================================
+   Change Item
+   ============================================ */
+.vs-change-item {
+	margin-bottom: 8px;
+	padding: 12px;
+	background: var(--background-secondary);
+	border-radius: var(--radius-s);
+	border: 1px solid var(--background-modifier-border);
+}
+
+.vs-change-item:hover {
+	background: var(--background-secondary-alt);
+}
+
+.vs-change-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.vs-change-left {
+	display: flex;
+	gap: 10px;
+	flex: 1;
+	min-width: 0;
+}
+
+.vs-change-icon {
+	font-size: 1.1em;
+	flex-shrink: 0;
+}
+
+.vs-change-info {
+	flex: 1;
+	min-width: 0;
+}
+
+.vs-change-desc {
+	font-weight: 500;
+	color: var(--text-normal);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.vs-change-meta {
+	font-size: 0.8em;
+	color: var(--text-muted);
+	margin-top: 2px;
+}
+
+.vs-change-actions {
+	display: flex;
+	gap: 6px;
+	flex-shrink: 0;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.vs-btn {
+	padding: 4px 12px;
+	border-radius: var(--radius-s);
+	font-size: 0.85em;
+	cursor: pointer;
+	border: none;
+	background: var(--interactive-normal);
+	color: var(--text-normal);
+	transition: background 0.15s ease;
+}
+
+.vs-btn:hover {
+	background: var(--interactive-hover);
+}
+
+.vs-btn-secondary {
+	background: transparent;
+	border: 1px solid var(--background-modifier-border);
+}
+
+.vs-btn-secondary:hover {
+	background: var(--background-modifier-hover);
+}
+
+.vs-btn-warning {
+	background: var(--background-modifier-error);
+	color: var(--text-on-accent);
+}
+
+.vs-btn-warning:hover {
+	background: var(--background-modifier-error-hover);
+	filter: brightness(1.1);
+}
+
+/* ============================================
+   Diff Section
+   ============================================ */
+.vs-diff-section {
+	margin-top: 12px;
+	padding-top: 12px;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.vs-diff {
+	margin: 0;
+	padding: 12px;
+	background: var(--background-primary);
+	border-radius: var(--radius-s);
+	font-family: var(--font-monospace);
+	font-size: 0.8em;
+	line-height: 1.5;
+	overflow-x: auto;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.vs-diff-line {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.vs-diff-add {
+	background: rgba(var(--color-green-rgb), 0.15);
+	color: var(--text-success);
+}
+
+.vs-diff-remove {
+	background: rgba(var(--color-red-rgb), 0.15);
+	color: var(--text-error);
+	text-decoration: line-through;
+}
+
+.vs-diff-context {
+	color: var(--text-muted);
+}
+
+/* ============================================
+   Confirm Modal
+   ============================================ */
+.vs-confirm-modal {
+	padding: 20px;
+	max-width: 400px;
+}
+
+.vs-confirm-modal h3 {
+	margin: 0 0 12px 0;
+	font-size: 1.1em;
+}
+
+.vs-confirm-desc {
+	color: var(--text-muted);
+	margin-bottom: 20px;
+	word-break: break-word;
+}
+
+.vs-confirm-buttons {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+}
+
+/* ============================================
+   Settings Page
+   ============================================ */
+.vault-steward-settings h2 {
+	margin-top: 24px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	padding-bottom: 6px;
+}
+
+/* Collapsible Section */
+.vs-collapsible {
+	margin-bottom: 16px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	overflow: hidden;
+}
+
+.vs-collapsible-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 16px;
+	background: var(--background-secondary);
+	cursor: pointer;
+	user-select: none;
+}
+
+.vs-collapsible-header:hover {
+	background: var(--background-secondary-alt);
+}
+
+.vs-collapsible-chevron {
+	font-size: 0.8em;
+	color: var(--text-muted);
+	transition: transform 0.15s ease;
+}
+
+.vs-collapsible.vs-expanded .vs-collapsible-chevron {
+	transform: rotate(90deg);
+}
+
+.vs-collapsible-title {
+	font-weight: 600;
+	color: var(--text-normal);
+}
+
+.vs-collapsible-content {
+	display: none;
+	padding: 16px;
+	background: var(--background-primary);
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.vs-collapsible.vs-expanded .vs-collapsible-content {
+	display: block;
+}
+
+/* Disclaimer/Warning box */
+.vs-disclaimer {
+	margin-top: 8px;
+	padding: 8px 12px;
+	background: rgba(var(--color-yellow-rgb), 0.1);
+	border-left: 3px solid var(--color-yellow);
+	border-radius: 0 var(--radius-s) var(--radius-s) 0;
+	font-size: 0.85em;
+	color: var(--text-muted);
+}
+
+/* Progress bar */
+.vs-progress-container {
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	width: 280px;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	padding: 12px 16px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	z-index: 1000;
+}
+
+.vs-progress-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.vs-progress-title {
+	font-weight: 500;
+	font-size: 0.9em;
+	color: var(--text-normal);
+}
+
+.vs-progress-count {
+	font-size: 0.85em;
+	color: var(--text-muted);
+}
+
+.vs-progress-bar {
+	height: 6px;
+	background: var(--background-modifier-border);
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.vs-progress-fill {
+	height: 100%;
+	background: var(--interactive-accent);
+	border-radius: 3px;
+	transition: width 0.3s ease;
+}
+
+.vs-progress-status {
+	margin-top: 6px;
+	font-size: 0.8em;
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* ============================================
+   Token Usage Stats
+   ============================================ */
+.vs-usage-stats {
+	margin-bottom: 16px;
+	padding: 16px;
+	background: var(--background-secondary);
+	border-radius: var(--radius-m);
+	border: 1px solid var(--background-modifier-border);
+}
+
+.vs-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 12px;
+	margin-bottom: 12px;
+}
+
+.vs-stat {
+	text-align: center;
+	padding: 8px;
+	background: var(--background-primary);
+	border-radius: var(--radius-s);
+}
+
+.vs-stat-value {
+	font-size: 1.4em;
+	font-weight: 600;
+	color: var(--text-accent);
+}
+
+.vs-stat-label {
+	font-size: 0.8em;
+	color: var(--text-muted);
+	margin-top: 4px;
+}
+
+.vs-tracking-info {
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.vs-recent-header {
+	font-weight: 500;
+	margin-bottom: 8px;
+	color: var(--text-normal);
+}
+
+.vs-recent-list {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.vs-recent-call {
+	display: flex;
+	gap: 12px;
+	padding: 6px 8px;
+	background: var(--background-primary);
+	border-radius: var(--radius-s);
+	font-size: 0.85em;
+}
+
+.vs-call-time {
+	color: var(--text-muted);
+	min-width: 100px;
+}
+
+.vs-call-tokens {
+	font-weight: 500;
+	color: var(--text-normal);
+}
+
+/* ============================================
+   Status Indicators
+   ============================================ */
+.vault-steward-status-processing {
+	color: var(--text-accent);
+}
+
+.vault-steward-status-success {
+	color: var(--text-success);
+}
+
+.vault-steward-status-error {
+	color: var(--text-error);
+}

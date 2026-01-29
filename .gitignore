@@ -1,0 +1,35 @@
+# Environment variables and secrets
+.env
+
+# Google OAuth credentials
+credentials.json
+token.json
+
+# Temporary processing files
+.tmp/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Build output (regenerated)
+main.js
+*.js.map
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
